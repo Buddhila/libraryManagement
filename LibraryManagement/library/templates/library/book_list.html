@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Book List</h1>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <form method="POST" action="{% url 'search_books' %}">
+              {% csrf_token %}
+              <div class="input-group">
+                <input type="text" name="name" class="form-control" placeholder="Search by name">
+                <select name="genre" class="form-select">
+                  <option value="">All Genres</option>
+                  <option value="fiction">Fiction</option>
+                  <option value="science">Science</option>
+                  <option value="history">History</option>
+                  <!-- Add more options for genres -->
+                </select>
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="{% url 'add_book' %}" class="btn btn-primary">Add Book</a>
+          </div>
+        </div>
+    
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Genre</th>
+              <th>Height</th>
+              <th>Publisher</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for book in books %}
+            <tr>
+              <td>{{ book.title }}</td>
+              <td>{{ book.author }}</td>
+              <td>{{ book.genre }}</td>
+              <td>{{ book.height }}</td>
+              <td>{{ book.publisher }}</td>
+              <td>
+                <a href="{% url 'delete_book' book.book_id %}" class="btn btn-danger">Delete</a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+1,Fundamentals of Wavelets,"Goswami & Jaideva",signal_processing,228,Wiley
+2,Data Smart,"Foreman & John",data_science,235,Wiley
+3,God Created the Integers,"Hawking Stephen",mathematics,197,Penguin
+4,Superfreakonomics,"Dubner Stephen",economics,179,HarperCollins
+5,Orientalism,"Said Edward",history,197,Penguin
+6,Nature of Statistical Learning Theory, "Vapnik Vladimir",data_science,230,Springer
+7,Integration of the Indian States,"Menon V P",history,217,Orient Blackswan
+8,Drunkard's Walk, "Mlodinow Leonard",science,197,Penguin
+9,Image Processing & Mathematical Morphology,"Shih Frank",signal_processing,241,CRC
+10,How to Think Like Sherlock Holmes,"Konnikova Maria",psychology,240,Penguin
+11,Data Scientists at Work,"Gutierrez Sebastian",data_science,230,Apress
+12,Slaughterhouse Five,"Vonnegut Kurt",fiction,198,Random House
+13,Birth of a Theorem,"Villani Cedric",mathematics,234,Bodley Head
+14,Structure & Interpretation of Computer Programs,"Sussman Gerald",computer_science,240,MIT Press
+15,Age of Wrath, "Eraly Abraham",history,238,Penguin
+16,Trial,"Kafka Frank",fiction,198,Random House
+17,Statistical Decision Theory,"Pratt John",data_science,236,MIT Press
+18,Data Mining Handbook,"Nisbet Robert",data_science,242,Apress
+19,New Machiavelli, "Wells H. G.",fiction,180,Penguin
+20,adventurelk,dinuwan nishshanka,adventure,124,t&c

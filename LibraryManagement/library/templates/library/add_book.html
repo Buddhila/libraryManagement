@@ -1,0 +1,45 @@
+
+{% load static %}<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Book</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="{% static 'css/add_book.css' %}">
+</head>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Add Book</h1>
+        <form method="post" action="{% url 'add_book' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" class="form-control" name="author" required>
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre:</label>
+                <input type="text" class="form-control" name="genre" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Height:</label>
+                <input type="text" class="form-control" name="height" required>
+            </div>
+            <div class="form-group">
+                <label for="publisher">Publisher:</label>
+                <input type="text" class="form-control" name="publisher" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Add</button>
+                <a href="{% url 'book_list' %}" class="btn btn-secondary btn-lg">Back</a>
+            </div>
+        </form>
+        
+   
+    </div>
+</body>
+</html>
+
